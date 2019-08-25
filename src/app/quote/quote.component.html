@@ -21,13 +21,13 @@
         
                     <h4>{{quote.quoted}}</h4>
 
-                    <button (click)="details(i)" class="btn btn-primary">Details</button>        
+                    <button (click)="toggleDetails(i)" class="btn btn-primary">Details</button>        
 
                 </div>
         
                 <div *ngIf="quote.showDescription">
         
-                    <app-quote-detail [quote]="quote" (isCreate) = "deleteQuote($event, i)"></app-quote-detail>
+                    <app-quote-detail [quote]="quote" ></app-quote-detail>
         
                 </div>
       
