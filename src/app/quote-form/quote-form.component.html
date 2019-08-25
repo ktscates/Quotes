@@ -1,1 +1,57 @@
+<div class="container-fluid">
 
+    <h2 class="text-center">Create a new Quote</h2>
+    <hr>
+
+    <form>
+
+        <div class="form-group">
+
+            <label for="quoted">Quote</label>
+
+            <textarea class="form-control" id="quoted" rows="4" required></textarea>
+
+            <div [hidden]="quoted.valid || quoted.pristine" class="alert alert-danger">
+
+                <p>Quote is required</p>
+
+            </div>
+
+            <!-- Testing to see if we get any data
+            Display {{newGoal.name}} -->
+        </div>
+        
+        <div class="form-group">
+
+            <label for="author">Author</label>
+
+            <input type="text" class="form-control" id="author" required>
+
+            <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+
+                <p>Author is required</p>
+                    
+            </div>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="person">Author</label>
+
+            <input type="text" class="form-control" id="person" required>
+
+            <div [hidden]="person.valid || person.pristine" class="alert alert-danger">
+
+                <p>Author is required</p>
+                    
+            </div>
+
+        </div>
+
+
+        <button type="submit" class="btn btn-success">Add Goal</button>
+
+    </form>
+    
+</div>
