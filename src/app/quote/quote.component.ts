@@ -9,7 +9,7 @@ import { Quote } from '../quote'
 export class QuoteComponent implements OnInit {
   
   quotes: Quote[] = [
-    new Quote(0,"","","")
+    new Quote(0,"","","",0,0)
   ];
 
   details(index){
