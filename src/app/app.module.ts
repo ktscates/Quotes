@@ -1,13 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { QuoteDetailComponent } from './quote/quote-detail/quote-detail.component';
-import { TimePipe } from './time.pipe';
+import { LikeComponent } from './like/like.component';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { TimePipe } from './time.pipe';
     QuoteComponent,
     QuoteFormComponent,
     QuoteDetailComponent,
-    TimePipe
+    LikeComponent,
   ],
   imports: [
     BrowserModule,
