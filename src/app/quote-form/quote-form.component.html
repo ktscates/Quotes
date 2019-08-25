@@ -3,13 +3,13 @@
     <h2 class="text-center">Create a new Quote</h2>
     <hr>
 
-    <form>
+    <form (ngSubmit)="submitQuote()" #quoteForm="ngForm">
 
         <div class="form-group">
 
             <label for="quoted">Quote</label>
 
-            <textarea class="form-control" id="quoted" rows="4" required></textarea>
+            <textarea class="form-control" id="quoted" rows="4" [(ngModel)]="newQuote.quoted" name="quoted" #quoted="ngModel" required></textarea>
 
             <div [hidden]="quoted.valid || quoted.pristine" class="alert alert-danger">
 
@@ -25,7 +25,7 @@
 
             <label for="author">Author</label>
 
-            <input type="text" class="form-control" id="author" required>
+            <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author="ngModel" required>
 
             <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
 
@@ -37,9 +37,9 @@
 
         <div class="form-group">
 
-            <label for="person">Author</label>
+            <label for="person">Your name</label>
 
-            <input type="text" class="form-control" id="person" required>
+            <input type="text" class="form-control" id="person" [(ngModel)]="newQuote.person" name="person" #person="ngModel" required>
 
             <div [hidden]="person.valid || person.pristine" class="alert alert-danger">
 

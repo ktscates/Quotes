@@ -1,16 +1,40 @@
 <div class="container">
 
-    <h1>Quotes</h1>
+    <h1 class="text-center">Quotes</h1>
     <hr>
 
     <div class="row">
 
         <div class="col-md-6">
 
-            <app-quote-form></app-quote-form>
+            <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 
         </div>
 
+        <div class="col-md-6">
+
+            <h2 class="text-center">My Quotes</h2>
+  
+            <div *ngFor="let quote of quotes; let i = index">
+        
+                <div>
+        
+                    <h4>{{quote.quoted}}</h4>
+            
+                    <button (click)="details(i)" class="btn btn-primary">Details</button>
+        
+                </div>
+        
+                <div *ngIf="quote.showDescription">
+        
+                    <app-quote-detail [quote]="quote" ></app-quote-detail>
+        
+                </div>
+      
+            </div>
+      
+        </div>
+
     </div>
-    
+
 </div>

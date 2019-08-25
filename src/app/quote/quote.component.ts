@@ -9,10 +9,18 @@ import { Quote } from '../quote'
 export class QuoteComponent implements OnInit {
   
   quotes: Quote[] = [
-    new Quote(1, 'Watch finding Nemo','Find an online version and watch merlin find his son', " hello "),
-    new Quote(2, 'Buy Cookies','I have to buy cookies for the parrot', " hello "),
-    new Quote(3, 'Get new Phone Case','Diana has her birthday coming up soon', "hello"),
+    new Quote(0,"","","")
   ];
+
+  details(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+
+  addNewQuote(quote){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    this.quotes.push(quote);
+  }
 
 
   constructor() { }
