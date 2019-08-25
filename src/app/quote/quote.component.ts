@@ -16,16 +16,6 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
 
-  deleteGoal(isCreate, index){
-    if(isCreate){
-      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].quoted}?`)
-
-      if(toDelete){
-        this.quotes.splice(index,1)
-      }
-    }
-  }
-
   
   addNewQuote(quote){
     let quoteLength = this.quotes.length;
