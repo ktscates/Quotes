@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Quote } from '../quote';
 
 @Component({
   selector: 'app-like',
@@ -7,16 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LikeComponent implements OnInit {
 
-  likes : number = 0;
-  unlikes: number = 0
   
-  like() {
-    this.likes++;
-  }
-  unlike(){
-    this.unlikes++;
-  }
-
 
   constructor() { }
 

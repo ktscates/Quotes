@@ -1,27 +1,23 @@
-# Quotes
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Quote Application
+#### Create your own quotes, 2019/08/26
+#### By **Cates NSENGIYUMVA**
+## Description
+This application allows users to create quotes and have those quotes voted on whether they are terrible or are inspirational. 
+## Setup/Installation Requirements
+* Go to GitHub account => www.github.com/ktscates
+* Go to my repositories
+* Select Quotes
+* Click on the green button labeled: clone or download. you can clone or download it directly into your computer.
+Unzip the folder.
+* You should have all the project files.
+## Known Bugs
+The like and dislike buttons are not working well, when clicked it does not display the number of likes, but it still highlight the quote with the highest likes
+## Technologies Used
+* HTML
+* CSS
+* Bootstrap
+* Angular js
+## Support and contact details
+If you run into errors, please feel free to contact me on github.
+### License
+Copyright (c) 2019 **Cates NSENGIYUMVA**

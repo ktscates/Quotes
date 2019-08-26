@@ -18,16 +18,31 @@
             <div *ngFor="let quote of quotes; let i = index">
         
                 <div>
-        
-                    <h4>{{quote.quoted}}</h4>
 
-                    <button (click)="toggleDetails(i)" class="btn btn-primary">Details</button>        
+                   
+        
+                    <p appHighlight *ngIf="highestUpvote()===quote.likes && quote.likes>0">{{quote.quoted}}</p>
+
+                    <p  *ngIf="highestUpvote()!==quote.likes || quote.likes===0">{{quote.quoted}}</p> 
+                    
+                    <p>Upvote: {{likes}}</p>
+                    <p>Downvote: {{unlikes}}</p>                  
+                    
+                    
+                            
+                    <button class="btn btn-success" (click)="like(i)">Like</button>
+
+                    <button class="btn btn-danger" (click)="unlike(i)">Dislike</button>
+
+                    <button (click)="toggleDetails(i)" class="btn btn-primary">Details</button>      
+                    
+                    
 
                 </div>
         
                 <div *ngIf="quote.showDescription">
         
-                    <app-quote-detail [quote]="quote" ></app-quote-detail>
+                    <app-quote-detail [quote]="quote" (isComplete)="deleteQuote($event,i)"></app-quote-detail>
         
                 </div>
       
