@@ -9,13 +9,11 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
   
   quotes: Quote[] = [
-    new Quote(0,"","","", new Date())
   ];
 
   toggleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
-
   
   addNewQuote(quote){
     let quoteLength = this.quotes.length;
@@ -23,7 +21,6 @@ export class QuoteComponent implements OnInit {
     quote.quoteDate = new Date(quote.quoteDate)
     this.quotes.push(quote);
   }
-
 
   constructor() { }
 
