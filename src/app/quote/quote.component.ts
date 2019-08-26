@@ -10,7 +10,7 @@ export class QuoteComponent implements OnInit {
   
   quotes: Quote[] = [
     new Quote (0,"Welcome to my Application", "Cates", "Cates", new Date()),
-    new Quote (0,"Welcome to my Application", "Cates", "Cates", new Date())
+    new Quote (0,"Hello, How are you?", "Cates", "Cates", new Date())
   ];
 
   toggleDetails(index){

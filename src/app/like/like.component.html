@@ -1,9 +1,0 @@
-<p>Upvote: {{likes}}</p>
-<p>Downvote: {{unlikes}}</p>
-<div  class="myQuote"*ngFor="let quote of quotes; let i = index">
-    <p appHighlight *ngIf="highestUpvote()===quote.likes && quote.likes>0">{{quote.quoted}}</p>
-    <p  *ngIf="highestUpvote()!==quote.likes || quote.likes===0">{{quote.quoted}}</p>
-        
-    <button class="btn btn-success" (click)="like(i)">Like</button>
-    <button class="btn btn-danger" (click)="unlike(i)">Dislike</button>
-</div>
