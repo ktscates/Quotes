@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <p>Written by: {{quote.author}}</p>
     <p>Submitted by: {{quote.person}}</p>
-    <p>Created : {{quote.quoteDate | timeAgo}}</p>
+    <p>Created : {{quote.quoteDate | date | timeAgo}}</p>
     <button (click)="quoteDelete(true)" class="btn btn-outline-danger">Delete Quote</button>
 </div>
 

@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { QuoteDetailComponent } from './quote/quote-detail/quote-detail.component';
-import { LikeComponent } from './like/like.component';
 import { HighlightDirective } from './highlight.directive';
 
 
@@ -18,7 +17,6 @@ import { HighlightDirective } from './highlight.directive';
     QuoteComponent,
     QuoteFormComponent,
     QuoteDetailComponent,
-    LikeComponent,
     TimeAgoPipe,
     HighlightDirective,
   ],
